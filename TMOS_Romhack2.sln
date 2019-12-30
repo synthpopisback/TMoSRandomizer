@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMoS_R", "TMoS_R\TMoS_R.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmos.Romhacks.UI", "Tmos.Romhacks.UI\Tmos.Romhacks.UI.csproj", "{6EF1E3EC-3B6F-4AB8-9FD8-5FECC7B14344}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMoSRandomizerTracker", "TMoSRandomizerTracker\TMoSRandomizerTracker.csproj", "{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{6EF1E3EC-3B6F-4AB8-9FD8-5FECC7B14344}.Release|x64.Build.0 = Release|Any CPU
 		{6EF1E3EC-3B6F-4AB8-9FD8-5FECC7B14344}.Release|x86.ActiveCfg = Release|Any CPU
 		{6EF1E3EC-3B6F-4AB8-9FD8-5FECC7B14344}.Release|x86.Build.0 = Release|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Debug|x64.Build.0 = Debug|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Release|x64.ActiveCfg = Release|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Release|x64.Build.0 = Release|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F7201C8-0DFA-46C5-A7DC-C0D9F965A6ED}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
