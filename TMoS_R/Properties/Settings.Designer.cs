@@ -22,5 +22,35 @@ namespace TMoS.R.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("LOESEL")]
+        public string DefaultFlags {
+            get {
+                return ((string)(this["DefaultFlags"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OriginalRom {
+            get {
+                return ((string)(this["OriginalRom"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OutputRom {
+            get {
+                return ((string)(this["OutputRom"]));
+            }
+            set {
+                this["OutputRom"] = value;
+            }
+        }
     }
 }

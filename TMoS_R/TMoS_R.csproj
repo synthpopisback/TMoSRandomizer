@@ -106,5 +106,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tmos.Romhacks.Core\Tmos.Romhacks.Core.csproj">
+      <Project>{d88653f7-6e39-46b4-8578-9a3d12504c40}</Project>
+      <Name>Tmos.Romhacks.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tmos.Romhacks.Mods\Tmos.Romhacks.Mods.csproj">
+      <Project>{9a68fa61-fadf-49a4-af1a-c05082b49647}</Project>
+      <Name>Tmos.Romhacks.Mods</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

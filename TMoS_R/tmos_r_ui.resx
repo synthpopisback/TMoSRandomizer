@@ -127,13 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="output_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 35</value>
+    <value>558, 38</value>
   </data>
   <data name="output_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 23</value>
   </data>
   <data name="output_button.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="output_button.Text" xml:space="preserve">
     <value>Browse...</value>
@@ -148,79 +148,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;output_button.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
-  <data name="checksum_copy_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 35</value>
-  </data>
-  <data name="checksum_copy_button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="checksum_copy_button.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="checksum_copy_button.Text" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="&gt;&gt;checksum_copy_button.Name" xml:space="preserve">
-    <value>checksum_copy_button</value>
-  </data>
-  <data name="&gt;&gt;checksum_copy_button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checksum_copy_button.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;checksum_copy_button.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="original_location_field.Location" type="System.Drawing.Point, System.Drawing">
     <value>128, 12</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 20</value>
+  <data name="original_location_field.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 20</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="original_location_field.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;original_location_field.Name" xml:space="preserve">
+    <value>original_location_field</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;original_location_field.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;original_location_field.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;original_location_field.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="output_location_field.Location" type="System.Drawing.Point, System.Drawing">
     <value>128, 38</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 20</value>
+  <data name="output_location_field.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 20</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="output_location_field.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;output_location_field.Name" xml:space="preserve">
+    <value>output_location_field</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;output_location_field.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;output_location_field.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;output_location_field.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 19</value>
+    <value>12, 17</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 13</value>
@@ -244,13 +220,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>11</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 45</value>
+    <value>12, 43</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 13</value>
@@ -274,13 +250,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>10</value>
   </data>
   <data name="CRC_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="CRC_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 16</value>
+    <value>316, 93</value>
   </data>
   <data name="CRC_Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 13</value>
@@ -301,28 +277,97 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CRC_Label.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>483, 12</value>
+  <data name="crc_field.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 90</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 20</value>
+  <data name="crc_field.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 20</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="crc_field.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;crc_field.Name" xml:space="preserve">
+    <value>crc_field</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;crc_field.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;crc_field.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;crc_field.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Gameplay.Name" xml:space="preserve">
+    <value>Gameplay</value>
+  </data>
+  <data name="&gt;&gt;Gameplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Gameplay.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;Gameplay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Enemies.Name" xml:space="preserve">
+    <value>Enemies</value>
+  </data>
+  <data name="&gt;&gt;Enemies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Enemies.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;Enemies.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Misc.Name" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;Misc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Misc.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;Misc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 116</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>606, 246</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Name" xml:space="preserve">
+    <value>checkedListBox1</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Parent" xml:space="preserve">
+    <value>Gameplay</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="Gameplay.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -331,7 +376,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="Gameplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>598, 246</value>
+    <value>598, 220</value>
   </data>
   <data name="Gameplay.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -351,6 +396,57 @@
   <data name="&gt;&gt;Gameplay.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="checkedListBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="checkedListBox1.Items" xml:space="preserve">
+    <value>Randomize Spells</value>
+  </data>
+  <data name="checkedListBox1.Items1" xml:space="preserve">
+    <value>Randomize Shop Prices</value>
+  </data>
+  <data name="checkedListBox1.Items2" xml:space="preserve">
+    <value>Randomize Locations</value>
+  </data>
+  <data name="checkedListBox1.Items3" xml:space="preserve">
+    <value>Randomize Encounter Screens</value>
+  </data>
+  <data name="checkedListBox1.Items4" xml:space="preserve">
+    <value>Randomize Level Rewards</value>
+  </data>
+  <data name="checkedListBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="checkedListBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 210</value>
+  </data>
+  <data name="checkedListBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Name" xml:space="preserve">
+    <value>checkedListBox1</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Parent" xml:space="preserve">
+    <value>Gameplay</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.Name" xml:space="preserve">
+    <value>checkedListBox2</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.Parent" xml:space="preserve">
+    <value>Enemies</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Enemies.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -358,7 +454,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="Enemies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>598, 246</value>
+    <value>598, 220</value>
   </data>
   <data name="Enemies.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -378,11 +474,89 @@
   <data name="&gt;&gt;Enemies.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="checkedListBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="checkedListBox2.Items" xml:space="preserve">
+    <value>Randomize Enemy Locations</value>
+  </data>
+  <data name="checkedListBox2.Items1" xml:space="preserve">
+    <value>Randomize Enemy HP</value>
+  </data>
+  <data name="checkedListBox2.Items2" xml:space="preserve">
+    <value>Randomize Enemy XP</value>
+  </data>
+  <data name="checkedListBox2.Items3" xml:space="preserve">
+    <value>2x Enemy XP</value>
+  </data>
+  <data name="checkedListBox2.Items4" xml:space="preserve">
+    <value>Hard Enemies</value>
+  </data>
+  <data name="checkedListBox2.Items5" xml:space="preserve">
+    <value>Late Enemies</value>
+  </data>
+  <data name="checkedListBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="checkedListBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 210</value>
+  </data>
+  <data name="checkedListBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.Name" xml:space="preserve">
+    <value>checkedListBox2</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.Parent" xml:space="preserve">
+    <value>Enemies</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Name" xml:space="preserve">
+    <value>checkedListBox3</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Parent" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="Misc.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
   <data name="Misc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>598, 246</value>
+    <value>598, 220</value>
   </data>
   <data name="Misc.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -402,35 +576,110 @@
   <data name="&gt;&gt;Misc.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 75</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>606, 272</value>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 7</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 20</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Sprite</value>
   </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Arabian Dream</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>Dark Isfa</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>Samus</value>
+  </data>
+  <data name="comboBox1.Items4" xml:space="preserve">
+    <value>Vanilla</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 6</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 21</value>
+  </data>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkedListBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="checkedListBox3.Items" xml:space="preserve">
+    <value>Flicker Reduction</value>
+  </data>
+  <data name="checkedListBox3.Items1" xml:space="preserve">
+    <value>Randomize Passwords</value>
+  </data>
+  <data name="checkedListBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="checkedListBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 210</value>
+  </data>
+  <data name="checkedListBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Name" xml:space="preserve">
+    <value>checkedListBox3</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.Parent" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="randomize_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 353</value>
+    <value>191, 368</value>
   </data>
   <data name="randomize_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 36</value>
   </data>
   <data name="randomize_button.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>8</value>
   </data>
   <data name="randomize_button.Text" xml:space="preserve">
     <value>RANDOMIZE</value>
@@ -445,19 +694,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;randomize_button.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
   <data name="about_button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="about_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 366</value>
+    <value>591, 381</value>
   </data>
   <data name="about_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
   </data>
   <data name="about_button.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>9</value>
   </data>
   <data name="about_button.Text" xml:space="preserve">
     <value>?</value>
@@ -472,7 +721,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;about_button.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="original_button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -481,13 +730,13 @@
     <value>NoControl</value>
   </data>
   <data name="original_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 9</value>
+    <value>558, 12</value>
   </data>
   <data name="original_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 23</value>
   </data>
   <data name="original_button.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>2</value>
   </data>
   <data name="original_button.Text" xml:space="preserve">
     <value>Browse...</value>
@@ -502,6 +751,135 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;original_button.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 66</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Seed</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 92</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="flags_field.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 90</value>
+  </data>
+  <data name="flags_field.MaxLength" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="flags_field.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 20</value>
+  </data>
+  <data name="flags_field.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;flags_field.Name" xml:space="preserve">
+    <value>flags_field</value>
+  </data>
+  <data name="&gt;&gt;flags_field.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flags_field.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flags_field.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="seed_field.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 64</value>
+  </data>
+  <data name="seed_field.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 20</value>
+  </data>
+  <data name="seed_field.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;seed_field.Name" xml:space="preserve">
+    <value>seed_field</value>
+  </data>
+  <data name="&gt;&gt;seed_field.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seed_field.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;seed_field.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="seed_button.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="seed_button.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="seed_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 64</value>
+  </data>
+  <data name="seed_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 23</value>
+  </data>
+  <data name="seed_button.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="seed_button.Text" xml:space="preserve">
+    <value>Generate Seed</value>
+  </data>
+  <data name="&gt;&gt;seed_button.Name" xml:space="preserve">
+    <value>seed_button</value>
+  </data>
+  <data name="&gt;&gt;seed_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seed_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;seed_button.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -511,7 +889,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>630, 394</value>
+    <value>630, 412</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>tmos_r_ui</value>
