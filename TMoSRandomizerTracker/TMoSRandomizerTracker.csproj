@@ -77,17 +77,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -108,6 +109,60 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_epin_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_faruk_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_gubibi_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_gunmeca_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_hassan_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_kebabu_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_mustafa_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_pukin_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_rainy_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char_supica_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_ch1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_ch2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_ch3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_ch4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_ch5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hero_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod_stardust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword_dragoon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
