@@ -46,13 +46,14 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.randomize_button = new System.Windows.Forms.Button();
-            this.about_button = new System.Windows.Forms.Button();
             this.original_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.flags_field = new System.Windows.Forms.TextBox();
             this.seed_field = new System.Windows.Forms.TextBox();
             this.seed_button = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.tabControl1.SuspendLayout();
             this.Gameplay.SuspendLayout();
             this.Enemies.SuspendLayout();
@@ -80,7 +81,6 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -91,7 +91,6 @@
             // 
             resources.ApplyResources(this.CRC_Label, "CRC_Label");
             this.CRC_Label.Name = "CRC_Label";
-            this.CRC_Label.Click += new System.EventHandler(this.CRC_Label_Click);
             // 
             // crc_field
             // 
@@ -106,7 +105,7 @@
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.tabControl1.TabStop = false;
             // 
             // Gameplay
             // 
@@ -115,12 +114,12 @@
             this.Gameplay.Controls.Add(this.checkedListBox1);
             resources.ApplyResources(this.Gameplay, "Gameplay");
             this.Gameplay.Name = "Gameplay";
-            this.Gameplay.Click += new System.EventHandler(this.Gameplay_Click);
             // 
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.SystemColors.Control;
             this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox1.CheckOnClick = true;
             resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
@@ -131,6 +130,7 @@
             resources.GetString("checkedListBox1.Items4")});
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.TabStop = false;
+            this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
             // Enemies
             // 
@@ -144,6 +144,7 @@
             // 
             this.checkedListBox2.BackColor = System.Drawing.SystemColors.Control;
             this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox2.CheckOnClick = true;
             resources.ApplyResources(this.checkedListBox2, "checkedListBox2");
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
@@ -155,6 +156,7 @@
             resources.GetString("checkedListBox2.Items5")});
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.TabStop = false;
+            this.checkedListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
             // Misc
             // 
@@ -165,7 +167,6 @@
             this.Misc.Controls.Add(this.checkedListBox3);
             resources.ApplyResources(this.Misc, "Misc");
             this.Misc.Name = "Misc";
-            this.Misc.Click += new System.EventHandler(this.Misc_Click);
             // 
             // label5
             // 
@@ -189,6 +190,7 @@
             // 
             this.checkedListBox3.BackColor = System.Drawing.SystemColors.Control;
             this.checkedListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox3.CheckOnClick = true;
             resources.ApplyResources(this.checkedListBox3, "checkedListBox3");
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Items.AddRange(new object[] {
@@ -196,6 +198,7 @@
             resources.GetString("checkedListBox3.Items1")});
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.TabStop = false;
+            this.checkedListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
             // randomize_button
             // 
@@ -203,13 +206,6 @@
             this.randomize_button.Name = "randomize_button";
             this.randomize_button.UseVisualStyleBackColor = true;
             this.randomize_button.Click += new System.EventHandler(this.randomize_button_click);
-            // 
-            // about_button
-            // 
-            resources.ApplyResources(this.about_button, "about_button");
-            this.about_button.Name = "about_button";
-            this.about_button.UseVisualStyleBackColor = true;
-            this.about_button.Click += new System.EventHandler(this.about_button_click);
             // 
             // original_button
             // 
@@ -227,7 +223,6 @@
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // flags_field
             // 
@@ -246,6 +241,15 @@
             this.seed_button.UseVisualStyleBackColor = true;
             this.seed_button.Click += new System.EventHandler(this.seed_button_click);
             // 
+            // openFileDialog1
+            // 
+            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
+            // folderBrowserDialog1
+            // 
+            this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest);
+            // 
             // tmos_r_ui
             // 
             resources.ApplyResources(this, "$this");
@@ -256,8 +260,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.original_button);
-            this.Controls.Add(this.about_button);
-            this.Controls.Add(this.randomize_button);
             this.Controls.Add(this.crc_field);
             this.Controls.Add(this.CRC_Label);
             this.Controls.Add(this.label2);
@@ -266,9 +268,12 @@
             this.Controls.Add(this.original_location_field);
             this.Controls.Add(this.output_button);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.randomize_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "tmos_r_ui";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.tmos_r_ui_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.Gameplay.ResumeLayout(false);
@@ -293,7 +298,6 @@
         private System.Windows.Forms.TabPage Enemies;
         private System.Windows.Forms.TabPage Misc;
         private System.Windows.Forms.Button randomize_button;
-        private System.Windows.Forms.Button about_button;
         private System.Windows.Forms.Button original_button;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
@@ -305,6 +309,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button seed_button;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
