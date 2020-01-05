@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TMoS.R.Properties {
+namespace TMoS_R.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -71,6 +71,30 @@ namespace TMoS.R.Properties {
         public int FlagsCount {
             get {
                 return ((int)(this["FlagsCount"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int NewSeed {
+            get {
+                return ((int)(this["NewSeed"]));
+            }
+            set {
+                this["NewSeed"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NewFlags {
+            get {
+                return ((string)(this["NewFlags"]));
+            }
+            set {
+                this["NewFlags"] = value;
             }
         }
     }

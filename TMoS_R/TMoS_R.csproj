@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3F4A48A0-83D3-4A6B-8D88-C564BDDECFC1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TMoS.R</RootNamespace>
+    <RootNamespace>TMoS_R</RootNamespace>
     <AssemblyName>TMoS_R</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TMoS.R.Program</StartupObject>
+    <StartupObject>TMoS_R.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -66,6 +66,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLibrary.cs" />
+    <Compile Include="DataView.cs" />
+    <Compile Include="DataViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataViewForm.Designer.cs" />
+    <Compile Include="ObjectSet.cs" />
+    <Compile Include="ProgramConfiguration.cs" />
+    <Compile Include="RandomEncounterGroup.cs" />
+    <Compile Include="RandomEncounterLineup.cs" />
+    <Compile Include="RandomizerSettings.cs" />
+    <Compile Include="RandomizeScript.cs" />
+    <Compile Include="RomContent.cs" />
     <Compile Include="tmos_r_ui.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,8 +87,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorldScreen.cs" />
+    <Compile Include="WorldScreenCollection.cs" />
+    <Compile Include="WorldScreenGraphic.cs" />
+    <Compile Include="WorldScreenMap.cs" />
+    <Compile Include="WorldScreenTileData.cs" />
+    <EmbeddedResource Include="DataViewForm.resx" />
     <EmbeddedResource Include="tmos_r_ui.resx">
       <DependentUpon>tmos_r_ui.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,6 +140,10 @@
     <ProjectReference Include="..\Tmos.Romhacks.Mods\Tmos.Romhacks.Mods.csproj">
       <Project>{9a68fa61-fadf-49a4-af1a-c05082b49647}</Project>
       <Name>Tmos.Romhacks.Mods</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tmos.Romhacks.UI\Tmos.Romhacks.UI.csproj">
+      <Project>{6ef1e3ec-3b6f-4ab8-9fd8-5fecc7b14344}</Project>
+      <Name>Tmos.Romhacks.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

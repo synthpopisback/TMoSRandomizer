@@ -300,105 +300,6 @@
   <data name="&gt;&gt;crc_field.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;Gameplay.Name" xml:space="preserve">
-    <value>Gameplay</value>
-  </data>
-  <data name="&gt;&gt;Gameplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Gameplay.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;Gameplay.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Enemies.Name" xml:space="preserve">
-    <value>Enemies</value>
-  </data>
-  <data name="&gt;&gt;Enemies.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Enemies.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;Enemies.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Misc.Name" xml:space="preserve">
-    <value>Misc</value>
-  </data>
-  <data name="&gt;&gt;Misc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Misc.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;Misc.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 113</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>615, 158</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox1.Name" xml:space="preserve">
-    <value>checkedListBox1</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox1.Parent" xml:space="preserve">
-    <value>Gameplay</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Gameplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="Gameplay.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="Gameplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>607, 220</value>
-  </data>
-  <data name="Gameplay.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Gameplay.Text" xml:space="preserve">
-    <value>Gameplay</value>
-  </data>
-  <data name="&gt;&gt;Gameplay.Name" xml:space="preserve">
-    <value>Gameplay</value>
-  </data>
-  <data name="&gt;&gt;Gameplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Gameplay.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;Gameplay.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="checkedListBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -424,7 +325,7 @@
     <value>3, 3</value>
   </data>
   <data name="checkedListBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>599, 212</value>
+    <value>599, 124</value>
   </data>
   <data name="checkedListBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -441,44 +342,32 @@
   <data name="&gt;&gt;checkedListBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;checkedListBox2.Name" xml:space="preserve">
-    <value>checkedListBox2</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox2.Parent" xml:space="preserve">
-    <value>Enemies</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Enemies.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Gameplay.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="Enemies.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="Gameplay.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="Enemies.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Gameplay.Size" type="System.Drawing.Size, System.Drawing">
     <value>607, 132</value>
   </data>
-  <data name="Enemies.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="Gameplay.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="Enemies.Text" xml:space="preserve">
-    <value>Enemies</value>
+  <data name="Gameplay.Text" xml:space="preserve">
+    <value>Gameplay</value>
   </data>
-  <data name="&gt;&gt;Enemies.Name" xml:space="preserve">
-    <value>Enemies</value>
+  <data name="&gt;&gt;Gameplay.Name" xml:space="preserve">
+    <value>Gameplay</value>
   </data>
-  <data name="&gt;&gt;Enemies.Type" xml:space="preserve">
+  <data name="&gt;&gt;Gameplay.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Enemies.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Gameplay.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;Enemies.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;Gameplay.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="checkedListBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -525,65 +414,32 @@
   <data name="&gt;&gt;checkedListBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>Misc</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>Misc</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox3.Name" xml:space="preserve">
-    <value>checkedListBox3</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox3.Parent" xml:space="preserve">
-    <value>Misc</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Misc.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Enemies.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="Misc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>607, 116</value>
+  <data name="Enemies.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="Misc.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="Enemies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>607, 132</value>
   </data>
-  <data name="Misc.Text" xml:space="preserve">
-    <value>Misc.</value>
+  <data name="Enemies.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;Misc.Name" xml:space="preserve">
-    <value>Misc</value>
+  <data name="Enemies.Text" xml:space="preserve">
+    <value>Enemies</value>
   </data>
-  <data name="&gt;&gt;Misc.Type" xml:space="preserve">
+  <data name="&gt;&gt;Enemies.Name" xml:space="preserve">
+    <value>Enemies</value>
+  </data>
+  <data name="&gt;&gt;Enemies.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Misc.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Enemies.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;Misc.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Enemies.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -667,7 +523,7 @@
     <value>0, 0</value>
   </data>
   <data name="checkedListBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 114</value>
+    <value>291, 130</value>
   </data>
   <data name="checkedListBox3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -683,6 +539,54 @@
   </data>
   <data name="&gt;&gt;checkedListBox3.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="Misc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Misc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>607, 132</value>
+  </data>
+  <data name="Misc.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Misc.Text" xml:space="preserve">
+    <value>Misc.</value>
+  </data>
+  <data name="&gt;&gt;Misc.Name" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="&gt;&gt;Misc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Misc.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;Misc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 113</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>615, 158</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="randomize_button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

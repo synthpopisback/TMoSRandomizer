@@ -1,4 +1,4 @@
-﻿namespace TMoS.R
+﻿namespace TMoS_R
 {
     partial class tmos_r_ui
     {
@@ -65,7 +65,7 @@
             resources.ApplyResources(this.output_button, "output_button");
             this.output_button.Name = "output_button";
             this.output_button.UseVisualStyleBackColor = true;
-            this.output_button.Click += new System.EventHandler(this.output_button_click_1);
+            this.output_button.Click += new System.EventHandler(this.output_button_click);
             // 
             // original_location_field
             // 
@@ -212,7 +212,7 @@
             resources.ApplyResources(this.original_button, "original_button");
             this.original_button.Name = "original_button";
             this.original_button.UseVisualStyleBackColor = true;
-            this.original_button.Click += new System.EventHandler(this.original_button_click_1);
+            this.original_button.Click += new System.EventHandler(this.original_button_click);
             // 
             // label3
             // 
