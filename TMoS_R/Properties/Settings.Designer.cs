@@ -32,15 +32,12 @@ namespace TMoS.R.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string OriginalRom {
             get {
                 return ((string)(this["OriginalRom"]));
-            }
-            set {
-                this["OriginalRom"] = value;
             }
         }
         
@@ -53,24 +50,6 @@ namespace TMoS.R.Properties {
             }
             set {
                 this["OutputRom"] = value;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SPSHLOESLRELEHEX2XHELEFRRP")]
-        public string FullFlags {
-            get {
-                return ((string)(this["FullFlags"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("13")]
-        public int FlagsCount {
-            get {
-                return ((int)(this["FlagsCount"]));
             }
         }
     }

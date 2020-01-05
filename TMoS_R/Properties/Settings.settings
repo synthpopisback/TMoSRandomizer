@@ -5,17 +5,11 @@
     <Setting Name="DefaultFlags" Type="System.String" Scope="Application">
       <Value Profile="(Default)">LOESEL</Value>
     </Setting>
-    <Setting Name="OriginalRom" Type="System.String" Scope="User">
+    <Setting Name="OriginalRom" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="OutputRom" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="FullFlags" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">SPSHLOESLRELEHEX2XHELEFRRP</Value>
-    </Setting>
-    <Setting Name="FlagsCount" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">13</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -75,7 +75,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // tb_output
             // 
@@ -230,7 +229,7 @@
             // btn_autogen
             // 
             this.btn_autogen.Location = new System.Drawing.Point(79, 35);
-            this.btn_autogen.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_autogen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_autogen.Name = "btn_autogen";
             this.btn_autogen.Size = new System.Drawing.Size(106, 20);
             this.btn_autogen.TabIndex = 19;
@@ -264,9 +263,9 @@
             this.groupBox4.Controls.Add(this.btn_autogen);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Location = new System.Drawing.Point(6, 130);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Size = new System.Drawing.Size(253, 89);
             this.groupBox4.TabIndex = 20;
             this.groupBox4.TabStop = false;
@@ -275,7 +274,7 @@
             // btn_autogen_choosepath
             // 
             this.btn_autogen_choosepath.Location = new System.Drawing.Point(215, 16);
-            this.btn_autogen_choosepath.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_autogen_choosepath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_autogen_choosepath.Name = "btn_autogen_choosepath";
             this.btn_autogen_choosepath.Size = new System.Drawing.Size(33, 20);
             this.btn_autogen_choosepath.TabIndex = 21;
