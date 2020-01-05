@@ -571,6 +571,11 @@ namespace TMOS_Romhack
 
         }
 
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
         /*void ShuffleEnemyGroups()
 		{
 			Random randomseed = new Random();
