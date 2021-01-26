@@ -54,6 +54,7 @@
             this.seed_button = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.about_button = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Gameplay.SuspendLayout();
             this.Enemies.SuspendLayout();
@@ -255,10 +256,18 @@
             // 
             this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest);
             // 
+            // about_button
+            // 
+            resources.ApplyResources(this.about_button, "about_button");
+            this.about_button.Name = "about_button";
+            this.about_button.UseVisualStyleBackColor = true;
+            this.about_button.Click += new System.EventHandler(this.about_button_Click);
+            // 
             // tmos_r_ui
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.about_button);
             this.Controls.Add(this.seed_button);
             this.Controls.Add(this.seed_field);
             this.Controls.Add(this.flags_field);
@@ -316,6 +325,7 @@
         private System.Windows.Forms.Button seed_button;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Button about_button;
     }
 }
 

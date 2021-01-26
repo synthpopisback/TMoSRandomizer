@@ -72,6 +72,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataViewForm.Designer.cs" />
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ObjectSet.cs" />
     <Compile Include="ProgramConfiguration.cs" />
     <Compile Include="RandomEncounterGroup.cs" />
@@ -93,6 +99,9 @@
     <Compile Include="WorldScreenMap.cs" />
     <Compile Include="WorldScreenTileData.cs" />
     <EmbeddedResource Include="DataViewForm.resx" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="tmos_r_ui.resx">
       <DependentUpon>tmos_r_ui.cs</DependentUpon>
       <SubType>Designer</SubType>

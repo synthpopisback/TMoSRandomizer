@@ -193,6 +193,12 @@ namespace TMoS_R
                 Properties.Settings.Default.OutputLocation = output_location_field.Text;
             }
         }
+
+        private void about_button_Click(object sender, EventArgs e)
+        {
+            AboutForm about_dialog = new AboutForm();
+            about_dialog.ShowDialog();
+        }
     }
 
     public class randomizer

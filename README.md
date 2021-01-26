@@ -4,4 +4,5 @@ Generate randomized ROMs for The Magic of Scheherazade (NES). The randomizer its
 # What does this do?
 This randomizer currently allows you to shuffle the following:  
 Overworld enemy types  
+Random encounter enemy formations  
 Shop, Hotel, Mosque, Item, Companion locations
