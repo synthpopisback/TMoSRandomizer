@@ -507,9 +507,6 @@
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="checkedListBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
   <data name="checkedListBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
@@ -520,10 +517,10 @@
     <value>Randomize Passwords</value>
   </data>
   <data name="checkedListBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>3, 3</value>
   </data>
   <data name="checkedListBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 130</value>
+    <value>291, 126</value>
   </data>
   <data name="checkedListBox3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
