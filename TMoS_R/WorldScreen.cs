@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TMoS_R
+﻿namespace TMoS_R
 {
 	public class WorldScreen
 	{
@@ -52,7 +46,6 @@ namespace TMoS_R
         public void LoadTileData(byte[] ROMTileData)
         {
             TileData = new WorldScreenTileData(ROMTileData,DataPointer, TopTiles, BottomTiles);
-            int a = 0;
         }
 
 		public bool IsDemonScreen()

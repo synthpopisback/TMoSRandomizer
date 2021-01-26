@@ -96,6 +96,7 @@
             // 
             resources.ApplyResources(this.crc_field, "crc_field");
             this.crc_field.Name = "crc_field";
+            this.crc_field.ReadOnly = true;
             // 
             // tabControl1
             // 
@@ -129,6 +130,7 @@
             resources.GetString("checkedListBox1.Items3"),
             resources.GetString("checkedListBox1.Items4")});
             this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.checkedListBox1.TabStop = false;
             this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
@@ -155,6 +157,7 @@
             resources.GetString("checkedListBox2.Items4"),
             resources.GetString("checkedListBox2.Items5")});
             this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.checkedListBox2.TabStop = false;
             this.checkedListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
@@ -197,6 +200,7 @@
             resources.GetString("checkedListBox3.Items"),
             resources.GetString("checkedListBox3.Items1")});
             this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.checkedListBox3.TabStop = false;
             this.checkedListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
@@ -228,6 +232,7 @@
             // 
             resources.ApplyResources(this.flags_field, "flags_field");
             this.flags_field.Name = "flags_field";
+            this.flags_field.ReadOnly = true;
             // 
             // seed_field
             // 

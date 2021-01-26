@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace TMoS_R
 {
@@ -59,13 +56,6 @@ namespace TMoS_R
 			OriginalRandomEncounterGroups = new RandomEncounterGroup[TOTAL_RANDOMENCOUNTERGROUP_COUNT];
 			NewRandomEncounterGroups = new RandomEncounterGroup[TOTAL_RANDOMENCOUNTERGROUP_COUNT];
 		}
-
-        public int RandomFunctionTest()
-        {
-            return GetRandom().Next(0,9999);
-        }
-
-
 
 		public void LoadDataFromRomFile(ref FileStream fileStream)
 		{
@@ -572,8 +562,6 @@ namespace TMoS_R
 				int currentByte = i % RandomEncounterLineup.Size;
 				NewRandomEncounterLineups[currentRandomEncounterLineup].Data[currentByte] = newMonsterGroupRawData[i];
 			}	
-
-			int a = 0;
 		}
 
 

@@ -4,19 +4,15 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Linq;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TMoS_R
 {
     public partial class tmos_r_ui : Form
     {
-        readonly string[] default_flags_string = new string[13] { "SP", "SH", "LO", "ES", "LR", "EL", "EH", "EX", "2X", "HE", "LE", "FR", "RP" };
-        randomizer new_rom = new randomizer();
-
+        private readonly string base_filename = "\\tmos-r";
+        private readonly string[] default_flags_string = new string[13] { "SP", "SH", "LO", "ES", "LR", "EL", "EH", "EX", "2X", "HE", "LE", "FR", "RP" };
+        
         public tmos_r_ui()
         {
             InitializeComponent();
@@ -24,7 +20,7 @@ namespace TMoS_R
 
         private void Form1_Load(object sender, EventArgs e) // Set default values
         {
-            string tmos_r_version = System.Windows.Forms.Application.ProductVersion;
+            string tmos_r_version = Application.ProductVersion;
             this.Text = String.Format("TMoS-R v.{0}", tmos_r_version);
             checkedListBox1.SetItemChecked(0, false);
             checkedListBox1.SetItemChecked(1, false);
@@ -42,18 +38,8 @@ namespace TMoS_R
             comboBox1.SelectedIndex = 4;
             flags_field.Text = Properties.Settings.Default.DefaultFlags;
             original_location_field.Text = Properties.Settings.Default.OriginalRom;
-            output_location_field.Text = Properties.Settings.Default.OutputRom;
+            output_location_field.Text = Properties.Settings.Default.OutputLocation;
             
-        }
-
-        private void original_button_click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void output_button_click_1(object sender, EventArgs e)
-        {
-
         }
 
         public static string BytesToString(byte[] bytes)
@@ -69,24 +55,33 @@ namespace TMoS_R
             int newseed = seed_generator.Next(0, 1000000000);
             seed_field.Text = newseed.ToString();
             Properties.Settings.Default.NewSeed = newseed;
+            Properties.Settings.Default.OutputRom = string.Concat(Properties.Settings.Default.OutputLocation, base_filename, "-", Application.ProductVersion, "-", Properties.Settings.Default.NewSeed, "-", Properties.Settings.Default.NewFlags, ".nes");
         }
 
         private void randomize_button_click(object sender, EventArgs e)
         {
-            if (original_location_field.Text == "")
+            Properties.Settings.Default.NewSeed = Convert.ToInt32(seed_field.Text);
+            if (original_location_field.Text != "")
             {
-
-            }
-            else
-            {
-                using (MD5 output_file_checksum = MD5.Create())
+                randomizer new_rom = new randomizer();
+                
+                if (true)// == "success")
                 {
-                    using (FileStream stream = File.OpenRead(original_location_field.Text))
+                    new_rom.SaveRom();
+                    using (MD5 output_file_checksum = MD5.Create())
                     {
-                        crc_field.Text = BytesToString(output_file_checksum.ComputeHash(stream));
+                        using (FileStream stream = File.OpenRead(Properties.Settings.Default.OutputRom))
+                        {
+                            crc_field.Text = BytesToString(output_file_checksum.ComputeHash(stream));
+                        }
                     }
                 }
-                new_rom.SaveRom(String.Concat(output_location_field.Text, "\\tmos-r", System.Windows.Forms.Application.ProductVersion, "-", flags_field.Text));
+                else
+                {
+                }
+            }
+            else
+            {            
             }
         }
 
@@ -172,9 +167,9 @@ namespace TMoS_R
         private void tmos_r_ui_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.OriginalRom = original_location_field.Text;
-            Properties.Settings.Default.OutputRom = output_location_field.Text;
+            Properties.Settings.Default.OutputLocation = output_location_field.Text;
             Properties.Settings.Default.NewSeed = 0;
-            Properties.Settings.Default.NewFlags = "";
+            Properties.Settings.Default.NewFlags = flags_field.Text;
             Properties.Settings.Default.Save();
         }
 
@@ -186,6 +181,7 @@ namespace TMoS_R
                 original_location_field.Text = openFileDialog1.FileName;
                 Properties.Settings.Default.OriginalRom = original_location_field.Text;
             }
+            //new_rom.Start();
         }
 
         private void output_button_click(object sender, EventArgs e)
@@ -194,55 +190,55 @@ namespace TMoS_R
             if (result == System.Windows.Forms.DialogResult.OK)
             {
                 output_location_field.Text = folderBrowserDialog1.SelectedPath;
-                Properties.Settings.Default.OutputRom = output_location_field.Text;
+                Properties.Settings.Default.OutputLocation = output_location_field.Text;
             }
         }
     }
 
-
-
-
-
-
-
-
-
-
-
     public class randomizer
     {
-        private string base_filename = String.Concat("tmos-r", System.Windows.Forms.Application.ProductVersion, "-", Properties.Settings.Default.NewFlags);
-        private string seed = Properties.Settings.Default.NewSeed.ToString();
+        private string seed;
+        public WorldScreenCollection[] _WorldScreenCollections;
+        private string filePath;
+        public string status;
 
-        WorldScreenCollection[] _WorldScreenCollections;
-        private string filePath = Properties.Settings.Default.OutputRom;
-        private string hex = "";
-
-        private int autogen_romsRemaining = 0;
-        private int autogen_currentRom = 1;
-
-        private string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\tmos_goodseeds.txt";
         // File outputFile = new File(path);
+
+        public string GetStatus()
+        {
+            return status;
+        }
 
         public randomizer()
         {
-                        
+            seed = Properties.Settings.Default.NewSeed.ToString();
+            filePath = Properties.Settings.Default.OriginalRom;
+            Start();
+            status = ModifyRom();            
         }
 
         public void LoadRom(string path)
         {
-            
+            LoadWorldScreenDataFromRomFile(path);
+        }
+        public void Start()
+        {
+            filePath = Properties.Settings.Default.OriginalRom;
+            if (filePath == "")
+            {
+            }
+            else
+            {
+                LoadRom(Properties.Settings.Default.OriginalRom);
+            }
         }
 
-        public void SaveRom(string path)
+        public void SaveRom()
         {
-
-
             byte[] startScreenTileData1 = new byte[] { 0x4D, 0x20, 0xB8, 0xC4, 0xC6, 0xB8, 0x20, 0x4D, 0x4D, 0x20, 0xB9, 0xC5, 0xC7, 0xB9, 0x20, 0x4D, 0x4D, 0xB8, 0xB8, 0xC0, 0xC3, 0xB8, 0xB8, 0x4D, 0x4D, 0xB9, 0xB9, 0xC0, 0xC3, 0xB9, 0xB9, 0x4D };
             byte[] startScreenTileData2 = new byte[] { 0x73, 0x73, 0x73, 0x73, 0x73, 0x73, 0x73, 0x73, 0xBF, 0x73, 0xBE, 0xBF, 0x73, 0x73, 0x73, 0xBE, 0x4D };
 
-
-            FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
+            FileStream fs = new FileStream(Properties.Settings.Default.OutputRom, FileMode.OpenOrCreate);
 
             //Screen1 tile change
 
@@ -377,7 +373,7 @@ namespace TMoS_R
             fs.Write(mosque1DialogText, 0, mosque1DialogText.Length);*/
 
 
-            //First Screen cahracter dialog
+            //First Screen character dialog
             byte[] characterDialogText = new byte[] { 0x80, 0xC9, 0x2C, 0x46, 0x3E, 0x41, 0x3B, 0x33, 0x2C, 0x20, 0x10, 0x42, 0x2C, 0x31, 0x12, 0x12, 0x3D, 0x2C, 0x41, 0x10, 0x3D, 0x33, 0x3E, 0x21, 0x38, 0x49, 0x12, 0x33, 0x4F, 0x2E, 0x12, 0x3D, 0x39, 0x3E, 0x48, 0x7D, 0x2C, 0x4B, 0x2F };
             fs.Seek(0x0215B5, SeekOrigin.Begin);
             fs.Write(characterDialogText, 0, characterDialogText.Length);
@@ -426,27 +422,23 @@ namespace TMoS_R
 
         public string ModifyRom()
 		{
-
             bool[] error = new bool[5];
-			Random random = new Random(Convert.ToInt32(seed));
+			Random random = new Random(Properties.Settings.Default.NewSeed);
 			bool timeDoorProblem = false;
             for (int i = 0; i < _WorldScreenCollections.Length;i++)
             {
                 WorldScreenCollection wc = _WorldScreenCollections[i];
 
-       
-				error[i] = wc.Modify(i,random);
+       			error[i] = wc.Modify(i,random);
 
 				if (wc.timeDoorProblem)
 				{
 					timeDoorProblem = true;
-                   
 				}
 			}
 
 			if (timeDoorProblem)
 			{
-
 				return "TimeDoor problem";
 			}
             else if (error[0] == true || error[1] == true || error[2] == true || error[3] == true || error[4] == true)
@@ -457,9 +449,7 @@ namespace TMoS_R
 			{
 				if (CheckThatAllRequiredScreenContentsArePresent())
 				{
-                    
-
-					return "success";
+                    return "success";
 				}
 				else
 				{
@@ -514,9 +504,13 @@ namespace TMoS_R
 			{
 				byte requiredContent = requiredContentsW1[requiredContentIndex];
 				matchingItem = _WorldScreenCollections[0].NewWorldScreens.FirstOrDefault(WorldScreen => WorldScreen.Content == requiredContent);
-				if (matchingItem == null){
-					allRequiredScreensExist = false;}
-				else{int asdasd = 0;}
+				if (matchingItem == null)
+                {
+					allRequiredScreensExist = false;
+                }
+				else
+                {
+                }
 			}
 
 			//W2
@@ -524,9 +518,13 @@ namespace TMoS_R
 			{
 				byte requiredContent = requiredContentsW2[requiredContentIndex];
 				matchingItem = _WorldScreenCollections[1].NewWorldScreens.FirstOrDefault(WorldScreen => WorldScreen.Content == requiredContent);
-				if (matchingItem == null) {
-					allRequiredScreensExist = false; }
-				else { int asdasd = 0; }
+				if (matchingItem == null) 
+                {
+					allRequiredScreensExist = false; 
+                }
+				else 
+                {
+                }
 			}
 
 			//W3
@@ -534,9 +532,13 @@ namespace TMoS_R
 			{
 				byte requiredContent = requiredContentsW3[requiredContentIndex];
 				matchingItem = _WorldScreenCollections[2].NewWorldScreens.FirstOrDefault(WorldScreen => WorldScreen.Content == requiredContent);
-				if (matchingItem == null) {
-					allRequiredScreensExist = false; }
-				else { int asdasd = 0; }
+				if (matchingItem == null)
+                {
+					allRequiredScreensExist = false; 
+                }
+				else 
+                {
+                }
 			}
 
 			//W4
@@ -544,9 +546,13 @@ namespace TMoS_R
 			{
 				byte requiredContent = requiredContentsW4[requiredContentIndex];
 				matchingItem = _WorldScreenCollections[3].NewWorldScreens.FirstOrDefault(WorldScreen => WorldScreen.Content == requiredContent);
-				if (matchingItem == null) {
-					allRequiredScreensExist = false; }
-				else { int asdasd = 0; }
+				if (matchingItem == null) 
+                {
+					allRequiredScreensExist = false; 
+                }
+				else 
+                {
+                }
 			}
 
 			//W5
@@ -554,9 +560,13 @@ namespace TMoS_R
 			{
 				byte requiredContent = requiredContentsW5[requiredContentIndex];
 				matchingItem = _WorldScreenCollections[4].NewWorldScreens.FirstOrDefault(WorldScreen => WorldScreen.Content == requiredContent);
-				if (matchingItem == null) {
-					allRequiredScreensExist = false; }
-				else { int asdasd = 0; }
+				if (matchingItem == null) 
+                {
+					allRequiredScreensExist = false; 
+                }
+				else
+                {
+                }
 			}
 
 			return allRequiredScreensExist;
@@ -564,7 +574,7 @@ namespace TMoS_R
 
 		public byte[] GetSeedTextBytes(string seed)
 		{//bad naming
-			byte[] blankTextBytes = new byte[6] { 0x2C, 0x2C, 0x2C, 0x2C, 0x2C, 0x2C };
+			byte[] blankTextBytes = new byte[10] { 0x2C, 0x2C, 0x2C, 0x2C, 0x2C, 0x2C, 0x2C, 0x2C, 0x2C, 0x2C };
 			byte[] seedTextBytes = seed.Select(t => byte.Parse(t.ToString())).ToArray();
 			
 			for (int i = 0; i < seedTextBytes.Length; i++)
@@ -574,12 +584,7 @@ namespace TMoS_R
 			
 			return blankTextBytes;
 		}
-
-		public void Start(bool first)
-		{
-			LoadRom(filePath);
-		}
-
+        
 		public void LoadWorldScreenDataFromRomFile(string filePath)
 		{
 			_WorldScreenCollections = new WorldScreenCollection[5];
@@ -594,46 +599,12 @@ namespace TMoS_R
 			//	_WorldScreenCollection[4] = new WorldScreenCollection(0x39695, 131, 0xC02A, 15, 0xC211, 10);
 			foreach (WorldScreenCollection wc in _WorldScreenCollections)
 			{
-				FileStream fileStream = new FileStream(filePath, FileMode.Open);
+				FileStream fileStream = new FileStream(Properties.Settings.Default.OriginalRom, FileMode.Open);
 		
 				wc.LoadDataFromRomFile(ref fileStream);
 				fileStream.Close();
 			}			
 		}
-
-        private void check_rom()
-        {
-            string status = ModifyRom();
-
-            if (status == "success")
-            {
-                //  WriteGoodSeedToFile(Convert.ToInt32(seed_field.Text.Text));
-                //get a bunch of good seeds
-                /*  int seed = new Random().Next(0, 99999);
-                  seed_field.Text.Text = seed.ToString();
-
-                  timer1.Start();*/
-
-                string newRomName = base_filename + autogen_currentRom.ToString() + "-" + Properties.Settings.Default.NewSeed + ".nes";
-                string newRomFullPath = Properties.Settings.Default.OutputRom + "/" + newRomName;
-                
-                File.Copy(filePath, newRomFullPath);
-                SaveRom(newRomFullPath);
-                autogen_romsRemaining = 0;
-                autogen_currentRom++;
-            }            
-            else
-            {
-            }
-        }
-
-        private void WriteGoodSeedToFile(int seed)
-        {
-            using (StreamWriter outputFile = File.AppendText(path))
-            {
-                outputFile.WriteLine(seed);
-            }
-        }
         
         /*private void timer1_Tick(object sender, EventArgs e)
         {

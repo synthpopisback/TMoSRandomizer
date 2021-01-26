@@ -88,13 +88,25 @@ namespace TMoS_R.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LOESEL")]
         public string NewFlags {
             get {
                 return ((string)(this["NewFlags"]));
             }
             set {
                 this["NewFlags"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OutputLocation {
+            get {
+                return ((string)(this["OutputLocation"]));
+            }
+            set {
+                this["OutputLocation"] = value;
             }
         }
     }
